@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alen's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="Home">
         <div class="top">
             <div class="logo">
-                <img src="images/logo_light.png" alt="">
+                <img src="images/logo_dark_white.png" alt="">
             </div>
             <div class="navigation">
                 <a class="navitem" href="#Home">Home</a>
@@ -22,20 +23,33 @@
         </div>
         <hr>
         <div class="main">
-            <div class="home" id="Home">
-                <p>Hey there!, I'm-</p>
-                <p>Alen Scaria Antony</p>
+            <div class="home">
+              <img src="images/bg_name.svg" alt="">
+                <p id="hey">Hey there!, I'm-</p>
+                <p id="name">Alen Scaria Antony.</p>
 
-                <p>Software Engineer. A passionated developer with an
-                    interest in designing and find digital solutions to various problems.</p>
+                <p id="smallDescription"><span id="profession">Software Engineer.</span> A passionated developer with an
+                    interest in <br>designing and finding digital solutions to various problems.</p>
 
-                    <p>🚀Currently working with .NET Technologies.</p>
-                    <p>⚡Technical Associate at Guidehouse</p>
+                    <p class="notes">🚀Currently working with .NET Technologies.</p>
+                    <p class="notes">⚡Technical Associate at <a href="https://guidehouse.com"><span id="company">Guidehouse</span></a></p>
                     <div class="social">
-                        <a class="socialLink" href="">LinkedIn</a>
-                        <a class="socialLink" href="">GitHub</a>
-                        <a class="socialLink" href="">Dev.To</a>
-                        <a class="socialLink" href="">Instagram</a>
+                        <div class="socialLink">
+                            <img src="images/linkedin.svg">
+                             <a href="https://www.linkedin.com/in/alenscaria/">LinkedIn</a>
+                        </div>
+                        <div class="socialLink">
+                            <img src="images/github.svg">
+                             <a href="https://github.com/alenscaria">GitHub</a>
+                        </div>
+                        <div class="socialLink">
+                            <img src="images/google.svg">
+                             <a href="mailto:alenantony051@gmail.com">Email</a>
+                        </div>
+                        <div class="socialLink">
+                            <img src="images/instagram.svg">
+                             <a href="https://www.instagram.com/alenscaria_photography/">Instagram</a>
+                        </div>
                     </div>
             </div>
             <div class="about" id="About">
@@ -48,33 +62,141 @@
                      currently focused on Web & Mobile Development, Open Source
                     and Competitive Programming.   When I'm not coding I design posters, nature photography, watch some movies, or if the weather's good, go for a ride! 🚴‍♂️</p>
                 <a href="#">Resume</a>
+                <br>
+                <h3>Expreiance</h3>
+                <p> Guidehouse  2023 - PRESENT</p>
                 </div>
                 <div class="myPic">
                     <img src="images/alen.png" alt="">
                 </div>
                 </div>
             <div class="skills" id="Skills">
-
+                <h3>Development</h3>
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>JavaScript</p>
+                 <p>C#</p>
+                 <p>C++</p>
+                 <p>Java</p>
+                 <p>Python</p>
+                 <h3>Design</h3>
+                 <p>Figma</p>
+                 <p>Canva</p>
+                 <h3>Tools</h3>
+                 <p>Git + GitHub</p>
+                 <p>Linux command line</p>
+                 <p>Google Dialogflow</p>
             </div>
             <div class="projects" id="Projects">
                 <h2>Projects</h2>
-                <div class="project-card-sm">
-                    <div class="card-border-gradient"></div>
-                    <div class="card-container">
-                      <img src="https://unblast.com/wp-content/uploads/2018/08/Gradient-Mesh-22.jpg" alt="">
-                      <div class="wrapper">
-                        <h1>Project Name</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, dignissimos dolore. Blanditiis odit, nobis eius molestiae, rerum iure atque aliquam </p>
+               <div class="projectCards">
+                <!-- project 1 -->
+                <div class="card">
+                    <div class="image">
+                        <img src="images/project1.png" alt="">
+                    </div>
+                    <div class="headline">
+                        <h3>ZED-ASSIST</h3>
+                        <div class="status">
+                            <p>In Progress</p>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>Assistant for people who leads a sedentary lifestyle.</p>
+                    </div>
+                    
+                </div>
+
+                 <!-- project 2 -->
+                 <div class="card">
+                    <div class="image">
+                        <img src="images/project1.png" alt="">
+                    </div>
+                    <div class="headline">
+                        <h3>ZED-ASSIST</h3>
+                        <div class="status">
+                            <p>In Progress</p>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>Assistant for people who leads a sedentary lifestyle.</p>
+                    </div>
+                    
+                </div>
+                 <!-- project 1 -->
+                 <div class="card">
+                    <div class="image">
+                        <img src="images/project1.png" alt="">
+                    </div>
+                    <div class="headline">
+                        <h3>ZED-ASSIST</h3>
+                        <div class="status">
+                            <p>In Progress</p>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>Assistant for people who leads a sedentary lifestyle.</p>
+                    </div>
+                    
+                </div>
+                 <!-- project 1 -->
+                 <div class="card">
+                    <div class="image">
+                        <img src="images/project1.png" alt="">
+                    </div>
+                    <div class="headline">
+                        <h3>ZED-ASSIST</h3>
+                        <div class="status">
+                            <p>In Progress</p>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>Assistant for people who leads a sedentary lifestyle.</p>
+                    </div>
+                    
+                </div>
+                 <!-- project 1 -->
+                 <div class="card">
+                    <div class="image">
+                        <img src="images/project1.png" alt="">
+                    </div>
+                    <div class="headline">
+                        <h3>ZED-ASSIST</h3>
+                        <div class="status">
+                            <p>In Progress</p>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>Assistant for people who leads a sedentary lifestyle.</p>
+                    </div>
+                    
+                </div>
+                 <!-- project 1 -->
+                 <div class="card">
+                    <div class="image">
+                        <img src="images/project1.png" alt="">
+                    </div>
+                    <div class="headline">
+                        <h3>ZED-ASSIST</h3>
+                        <div class="status">
+                            <p>In Progress</p>
+                        </div>
+                    </div>
+                    <div class="description">
+                        <p>Assistant for people who leads a sedentary lifestyle.</p>
+                    </div>
+                    
+                </div>
+               </div>
             </div>
-           
-            <!-- <div class="contact" id="Contact">
+            <div class="contact" id="Contact">
                 <h2>Get In Touch</h2>
                 <p>Although I’m not currently looking for any new opportunities,
                     my inbox is always open. Whether you have a question or just want to 
                     say hi, I’ll try my best to get back to you!</p>
                     <a href="mailto:alenantony051@gmail.com">Say Hello</a>
-            </div> -->
-        </div>
+            </div>
+       
     </div>
 </body>
 </html>

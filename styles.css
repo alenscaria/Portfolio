@@ -14,7 +14,7 @@ body {
 
 .container {
     padding: 20px;
-    background-color: aqua;
+    background-color: #000000;
     width: 100vw;
     height: fit-content;
 
@@ -27,6 +27,7 @@ body {
 
 .top .logo img {
     width: 70px;
+    margin-top: 5px;
 }
 
 .navigation {
@@ -35,7 +36,6 @@ body {
     font-size: larger;
     right: 0;
     text-align: end;
-    background-color: aquamarine;
     width: 75%;
 }
 
@@ -43,12 +43,16 @@ body {
     margin-right: 20px;
     font-weight: 600;
 }
+.navitem:hover
+{
+  color: #37cc8e;
+}
 
 a,
 a:visited,
 a:active {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 hr {
@@ -57,7 +61,7 @@ hr {
     display: block;
     height: 3px;
     border: 0;
-    border-top: 1px solid #000000;
+    border-top: 1px solid #ffffff;
     opacity: 0.1;
 }
 
@@ -70,19 +74,99 @@ hr {
 .home
 {   position: relative;
     height: 78vh;
-    background-color: aquamarine;
+    background-color: rgb(0, 0, 0);
     margin-bottom: 30px;
+    padding: 10px;
+    margin-top: -10px;
+}
+.home img
+{
+  position: absolute;
+  z-index: 0;
+  width: 150px;
+  opacity: 0.5;  
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#hey
+{
+  position: relative;
+  z-index: 1;
+  margin-left: 50px;
+  font-size: xx-large;
+  font-weight: bold;
+  color: #37cc8e;
+ 
+  
+}
+#name
+{
+  position: relative;
+  z-index: 2;
+  margin-top: -40px;
+  margin-left: 50px;
+  font-size: 80px;
+  font-weight: bolder;
+  color: white;
+}
+#smallDescription
+{
+  margin-top: -70px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  font-size: 22px;
+  font-weight: bold;
+  color: grey;
+}
+#profession
+{
+  color: white;
+}
+.notes
+{
+  margin-left: 50px;
+  line-height: 1;
+  font-size: 20px;
+  color: grey;
+}
+#company
+{
+  color: #37cc8e;
 }
 .social
 {
-    background-color: white;
-    position: absolute;
-    bottom: 0;
     
+  margin-left: 50px;
 }
 .socialLink
 {
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
     margin-right: 20px;
+    font-weight: 500 ;
+    background-color: #141414;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 3px;
+    width: fit-content;
+  
+}
+.socialLink:hover
+{
+  background-color: #333;
+}
+.socialLink a
+{
+  margin-left: 32px;
+}
+.socialLink img
+{
+  width: 20px;
+  margin-top: 0px;
+  margin-left: 3px;
 }
 .about, .skills, .projects
 {
@@ -93,6 +177,39 @@ hr {
 .projects
 {
     
+}
+.projectCards
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card
+{
+  width: 450px;
+  height: 400px;
+  background-color: burlywood;
+  padding: 10px;
+  border-radius: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+.card img
+{
+  width: 450px;
+}
+.card .headline
+{
+display: flex;
+flex-direction: row;
+}
+.card p
+{
+
+}
+.card .status
+{
+  margin-left: auto;
 }
 .about
 {
@@ -124,108 +241,3 @@ hr {
 }
 
 
-/* ----------------Project CARD------------- */
-.project-card-sm {
-    /*   max-width: 600px; */
-      max-width: 500px;
-      padding: 2.5px;
-      border-radius: 15px;
-      background-color: rgba(255, 255, 255, 0.15);
-      position: relative;
-      overflow: hidden;
-      cursor: pointer;
-      
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      
-      transition: transform 0.4s, box-shadow 0.4s ;
-    }
-    
-    .project-card-sm:hover {
-      transform: scale(1.025);
-      box-shadow: 0 0 100px -30px #6f45dc;  
-    }
-    
-    
-    .project-card-sm .card-border-gradient {
-      content: "";
-      position: absolute;
-      bottom: 50%;
-      height: 300%;
-      width: 10rem;
-      z-index: -1;
-      background: linear-gradient(to right, transparent, #9272e4, transparent);
-      
-      transition: opacity 0.3s ;
-      opacity: 0;
-        
-      animation: animate-border-gradient 5s infinite linear;
-    }
-    
-    .project-card-sm:hover .card-border-gradient {
-      opacity: 1;
-    }
-    
-    @keyframes animate-border-gradient {
-      0% {
-        transform: rotate(0deg);
-        transform-origin: bottom;
-      }
-      100% {
-        transform: rotate(360deg) ;
-        transform-origin: bottom;
-      }
-    }
-    
-    
-    .project-card-sm .card-container {
-      display: grid;
-      grid-template-areas: "img img text text text";
-      gap: 1rem;
-      padding: 0.75rem;
-      border-radius: 12px;
-      background-color: hsl(0, 0%, 10%);
-      color: rgba(255, 255, 255, 0.7);
-    }
-    
-    .card-container img {
-      grid-area: img;
-    /*   height: 100%; */
-      aspect-ratio: 1 / 1;
-      width: 100%;
-      border-radius: 8px;
-      
-      transition: transform 0.3s;
-    }
-    
-    .card-container .wrapper {
-      grid-area: text;
-      font-size: 0.9rem;
-      line-height: 1.4;
-    }
-    
-    .card-container .wrapper h1 {
-      font-size: 1.1rem;
-      font-weight: 800;
-      line-height: 1;
-      color: #fff;
-      margin-bottom: 0.75rem;
-    }
-    
-    .card-container .wrapper button {
-      background: none;
-      border: none;
-      
-      font: inherit;
-      color: #fff;
-    /*   background-color: red; */
-      margin-top: 1.4rem;
-      
-    }
-    
-    .card-container .wrapper button i {
-      margin-left: .5rem;
-      transition: margin 0.3s;
-    }
-    .card-container:hover button i {margin-left: 1rem;}
