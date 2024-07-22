@@ -299,6 +299,11 @@ flex-direction: row;
 .card .status
 {
   margin-left: auto;
+  margin-top: 5px;
+}
+.card .status p
+{
+  color: #37cc8e;
 }
 .contact
 {
