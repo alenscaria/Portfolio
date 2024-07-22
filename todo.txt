@@ -1,3 +1,12 @@
 - scroll up show nav bar
-- curve display
--abdul rah, brittany websites for reffering
+- responsive
+- project card animations
+- update cv
+- hosting (github)
+
+✅logo Color
+✅button social color
+✅favicon
+✅scroll to top ch
+
+*abdul rah, brittany websites for reffering
