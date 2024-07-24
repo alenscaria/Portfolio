@@ -7,6 +7,7 @@
     <title>Alen's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <script src="script.js"></script>
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 
@@ -23,12 +24,13 @@
             <div class="logo">
                 <img src="images/log.png" alt="">
             </div>
-            <div class="navigation">
+            <div class="navigation" id="myNav">
                 <a class="navitem" href="#Home">Home</a>
                 <a class="navitem" href="#About">About</a>
                 <a class="navitem" href="#Skills">Skills</a>
                 <a class="navitem" href="#Projects">Projects</a>
                 <a class="navitem" href="#Contact">Contact</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
         </div>
         <hr>
@@ -38,8 +40,8 @@
                 <p id="hey">Hey there!, I'm-</p>
                 <p id="name">Alen Scaria Antony.</p>
 
-                <p id="smallDescription"><span id="profession">Software Engineer.</span> A passionate developer with an
-                    interest in <br>designing and finding digital solutions to various problems.</p>
+                <p id="smallDescription"><span id="profession">Software Engineer.</span> A passionated developer with an
+                    interest in <span class="newline">designing and finding digital solutions to various problems.</span></p>
 
                 <p class="notes">🚀Currently working with .NET Technologies.</p>
                 <p class="notes">⚡Technical Associate at <a href="https://guidehouse.com"><span
@@ -67,14 +69,14 @@
                 <div class="info">
                     <h2>About Me</h2>
                     <p>Hello! My name is Alen and I enjoy creating things that live on the internet.
-                        <br>My interest in web development started back in 2020 during my college days.
+                        <span class="newline">My interest in web development started back in 2020 during my college days.</span>
                     </p>
                     <p></p>
                     <p>I'm interested in building something useful with code and automate tasks with code,
                         currently focused on Web & Mobile Development, Open Source
                         and Competitive Programming.</p>
-                    <p>When I'm not coding I design posters, nature photography, watch some movies, <br>or if the
-                        weather's good, go for a ride! 🚴‍♂️</p>
+                    <p>When I'm not coding I design posters, nature photography, watch some movies, <span class="newline">or if the
+                        weather's good, go for a ride! 🚴‍♂️</span></p>
                     <a href="cv.pdf" target="_blank" class="button">Resume</a>
                     <br>
                 </div>
@@ -296,8 +298,8 @@
             <div class="contact" id="Contact">
                 <h2>Get In Touch</h2>
                 <p>Although I’m not currently looking for any new opportunities,
-                    my inbox is always open. <br>Whether you have a question or just want to
-                    say hi, I’ll try my best to get back to you!</p>
+                    my inbox is always open. <span class="newline">Whether you have a question or just want to
+                    say hi, I’ll try my best to get back to you!</span></p>
                 <a href="mailto:alenantony051@gmail.com" class="button">Say Hello</a>
             </div>
             <hr>
@@ -307,6 +309,7 @@
             </footer>
 
         </div>
+        <script src="script.js"></script>
 </body>
 
 </html>
