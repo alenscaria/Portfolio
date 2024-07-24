@@ -1,0 +1,352 @@
+/* RESPONSIVE */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .top {
+        padding-right: 25px;
+    }
+
+    .container .top .logo img {
+        width: 30px;
+        margin-top: 25px;
+    }
+
+    .navigation {
+        width: 100px;
+        margin-right: 10px;
+    }
+
+    .navigation a {
+        display: none;
+    }
+
+    .navigation a.icon {
+        float: right;
+        display: block;
+    }
+
+    .navigation.responsive {
+        position: relative;
+    }
+
+    .navigation.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navigation.responsive a {
+        float: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: right;
+    }
+
+    .navigation.responsive {
+        float: none;
+    }
+
+    .navigation.responsive {
+        position: relative;
+    }
+
+    .navigation.responsive {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .main .home {
+        margin-top: 20px;
+    }
+
+    .main .home img {
+        position: absolute;
+        z-index: 0;
+        width: 100px;
+        opacity: 0.5;
+        margin-top: 10px;
+        margin-left: -25px;
+    }
+
+    .main #hey {
+        position: relative;
+        z-index: 1;
+        margin-left: 50px;
+        font-size: larger;
+        font-weight: 600;
+        color: #37cc8e;
+        margin-left: -10px;
+    }
+
+    .main #name {
+        position: relative;
+        z-index: 2;
+        margin-top: -20px;
+        font-size: 33px;
+        font-weight: bold;
+        color: white;
+        margin-left: -10px;
+    }
+
+    .main #smallDescription {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: -10px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #C7C8CC;
+    }
+
+    .main .newline {
+        display: inline;
+    }
+
+    #profession {
+        color: white;
+    }
+
+    .main .notes {
+        margin-left: -10px;
+        line-height: 50%;
+        font-size: 14px;
+        color: grey;
+        margin-bottom: 30px;
+    }
+
+    .main .social {
+
+        margin-left: -10px;
+    }
+
+    .social .socialLink {
+        margin-top: 20px;
+        display: inline-flex;
+        align-items: center;
+        margin-right: 5px;
+        font-weight: 500;
+        background-color: #141414;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 3px;
+        width: fit-content;
+        font-size: x-small;
+    }
+
+    .social .socialLink a {
+        margin-left: 20px;
+        z-index: 2;
+    }
+
+    .social .socialLink img {
+        width: 12px;
+        margin-top: 0px;
+        margin-left: 3px;
+    }
+
+    .main .about {
+        margin-top: -200px;
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .about h2,
+    .skills h2,
+    .contact h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #37cc8e;
+    }
+
+    .about .info {
+        margin-top: 5px;
+        background-color: var(--bgColor);
+        padding-left: 10px;
+        width: 85%;
+        color: white;
+        z-index: 1;
+    }
+
+    .about .myPic {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 40px;
+        z-index: 1;
+    }
+    .info a
+    {
+        margin-left: 110px;
+        margin-bottom: 50px;
+    }
+
+    .about .myPic img {
+        width: 65%;
+        border-radius: 50%;
+        border: 5px solid #37cc8e;
+    }
+
+    .main .skills {
+        padding-top: 0px;
+        color: white;
+        margin-left: -8px;
+        }
+
+    .main .skills img {
+        width: 15%;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    .skillIcons {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main .skills h2 {
+        margin-left: -55px;
+    }
+
+    .projectCards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main .projects {
+        padding-top: 20px;
+        margin-left: -30px;
+        color: #37cc8e;
+    }
+    .main .projects h2
+    {
+        margin-left: 155px;
+        margin-top: -70px;
+    }
+
+    .main .card {
+        position: relative;
+        z-index: 1;
+        width: 300px;
+        height: fit-content;
+        border: 1px solid #37cc8e;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+
+   .main .card img {
+        width: 300px;
+    }
+
+    .card .headline {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card .status {
+        margin-left: auto;
+        margin-top: 5px;
+    }
+
+    .card .status p {
+        color: #37cc8e;
+    }
+
+    .contact {
+        display: flex;
+        padding-right: 40px;
+        width: 300px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
+        color: white;
+        margin-left: -10px;
+        background-color: rgb(0, 0, 0)
+    }
+    .contact p,.contact h2,.button
+    {
+        text-align: center;
+        margin-left: 60px;
+    }
+
+    .contact .button {
+        z-index: 2;
+    }
+    footer {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        width: 90%;
+        height: 100px;
+        margin-top: -100px;
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    footer p
+    {
+        font-size: x-small;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    footer #rocket {
+        z-index: 2;
+    }
+hr
+{
+    margin-bottom: 70px;
+}
+    footer #rocket img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 20px;
+        padding: 0px;
+        z-index: 2;
+        background-blend-mode:lighten;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .example {
+        background: green;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .example {
+        background: blue;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .example {
+        background: orange;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .example {
+        background: pink;
+    }
+}
