@@ -2,3 +2,8 @@
 - responsive
 - project card animations
 - update cv
+
+
+hosted
+project card updated
+responsive
